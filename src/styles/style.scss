@@ -1,0 +1,209 @@
+@import 'variables';
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 1000px;
+  background-color: $borders;
+  width: 100%;
+  height: 100%;
+}
+
+.new_task {
+  border-bottom: 24px solid $borders;
+  background-color: $card_background;
+}
+
+header {
+  padding-top: 62px;
+}
+.container {
+    width: 960px;
+	margin: 0 auto;
+    position: relative;
+    overflow: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+.title1 {
+    font-size: 21px;
+    float: left;
+    font-weight: normal;
+}
+
+.title2 {
+    font-size: 21px;
+    margin-right: 260px;
+    float: right;
+    font-weight: normal;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+.column_left {
+    float: left;
+    width: 470px;
+    margin: 0;
+  }
+
+.check {
+  margin-right: 10px;
+}
+
+
+.window {
+  background-color:  $borders;
+  margin-top: 30px;
+  border-bottom:1px solid $borders ;
+  list-style: none;
+  padding: 0;
+}
+
+.window {
+    li{
+        text-align: left;
+    }
+}
+
+
+.notask {
+  margin-top: 44px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+
+.comment {
+    padding-bottom: 90px;
+    background-color: $card_background;
+    width: 470px;
+  }
+ 
+.comtext {
+      padding-top: 5px;
+      margin-left: 20px;
+      font-size: 14px;
+      color: #8993ad;
+  }
+
+
+.task {
+    width: 376px;
+    height: 41px;
+    border: none;
+    margin-top:8px;
+    border: 1px solid $borders;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.comment {
+  width: 376px;
+  height: 121px;
+  border: none;
+  margin-top: 7px;
+  border: 1px solid #ebebeb;
+  background-color: #f9f9f9;
+  font-size: 18px;
+  padding-top: 16px;
+  padding-left: 10px;
+}
+
+.column_right {
+    margin-top: 30px;
+    height: 540px;
+    width: 470px;
+    background-color: $card_background;
+    float: right;
+}
+
+label {
+    display: block;
+    padding-top: 47px;
+    font-size:14px;
+    color: #8993ad;
+}
+.note {
+  padding-top: 28px;
+  font-size:14px;
+  color: #8993ad;
+}
+
+.add {
+    padding: 18px 56px;
+    border: none;
+    background-color:#2174fd;
+    margin-left: 40px;
+    margin-top: 25px;
+  }
+  
+.add {
+    span {
+    font-size: 16px;
+    color: $card_background;
+    }
+  }
+.com {
+    height: 33px;
+    padding: 10px 0px 45px 20px;
+    color:  #8993ad;
+    font-size: 14px;
+  }
+  
+.head {
+    padding: 15px 20px 10px 20px;
+    border-bottom:1px solid  $borders;
+  }
+
+.new {
+    max-width: 250px;
+    display: inline-block;
+    margin: 0px;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+
+/* .id_number {
+    font-size: 17px;
+} */
+
+.arrow {
+    border: none;
+    background-color:$card_background;
+    float: right;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        border:1px solid olive;
+    }
+  }
+
+#toggle_com {
+    transition: all 0.5s ease-out;
+}
+
+.scroll {
+  width: 15px;
+  height: 50px;
+  float: left;
+  margin-right: 5px;
+  padding: 0;
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  border: none;
+}
+.scrl {
+  writing-mode: tb-rl;
+  transform:rotate(180deg);
+  font-weight: normal;
+  text-shadow: 1px 1px 2px black;
+}
